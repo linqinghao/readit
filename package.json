@@ -12,10 +12,11 @@
     "build": "cross-env NODE_ENV=production webpack",
     "preupload": "run-s build",
     "upload": "run-script-os",
-    "upload:darwin":"/Applications/wechatwebdevtools.app/Contents/MacOS/cli -u $npm_package_version@$INIT_CWD",
-    "upload:win32": "C:\/Program Files (x86)\/Tencent\/微信web开发者工具/cli.bat -u $npm_package_version@$INIT_CWD"
+    "upload:darwin": "/Applications/wechatwebdevtools.app/Contents/MacOS/cli -u $npm_package_version@$INIT_CWD",
+    "upload:win32": "C:/Program Files (x86)/Tencent/微信web开发者工具/cli.bat -u $npm_package_version@$INIT_CWD"
   },
   "dependencies": {
+    "@tinajs/tina": "^1.8.0",
     "es6-promise": "^4.1.1"
   },
   "devDependencies": {
