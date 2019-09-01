@@ -1,16 +1,51 @@
 <config>
 {
   "window": {
-    "navigationBarBackgroundColor": "#25798a",
-    "backgroundColor": "#25798a"
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "readit",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light"
   },
   "pages": [
-    "pages/home.mina"
-  ]
+    "pages/feed/home.mina",
+    "pages/discovery/discovery.mina",
+    "pages/me/me.mina"
+  ],
+  "tabBar": {
+    "backgroundColor": "#ffffff",
+    "color": "#eee",
+    "selectedColor": "#30e3ca",
+    "borderStyle": "white",
+    "list": [{
+      "pagePath": "pages/feed/home",
+      "text": "Feed",
+      "iconPath": "./assets/Icon-feed.png",
+      "selectedIconPath": "./assets/Icon-feed-active.png"
+    },
+    {
+      "pagePath": "pages/discovery/discovery",
+      "text": "Discovery",
+      "iconPath": "./assets/Icon-discovery.png",
+      "selectedIconPath": "./assets/Icon-discovery-active.png"
+    },
+    {
+      "pagePath": "pages/me/me",
+      "text": "Me",
+      "iconPath": "./assets/Icon-me.png",
+      "selectedIconPath": "./assets/Icon-me-active.png"
+    }]
+  }
 }
 </config>
 
 <script>
 App({
+  onLaunch(options) {
+    wx.cloud.init({
+      env: 'dev-3c308e',
+      traceUser: true,
+    })
+  },
 })
 </script>

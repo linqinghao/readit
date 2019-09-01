@@ -1,13 +1,17 @@
 {
-  "miniprogramRoot": "./dist",
-  "compileType": "miniprogram",
-  "setting": {
-    "es6": false,
-    "postcss": false,
-    "minified": false,
-    "uglifyFileName": false,
-    "newFeature": true
-  },
-  "appid": "",
-  "projectname": "readit"
+	"miniprogramRoot": "dist/",
+	"compileType": "miniprogram",
+	"setting": {
+		"es6": false,
+		"postcss": false,
+		"minified": false,
+		"uglifyFileName": false,
+		"newFeature": true
+	},
+	"appid": "wxf9aae41f9e92e35f",
+	"projectname": "readit",
+	"cloudfunctionRoot": "functions/",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {}
 }

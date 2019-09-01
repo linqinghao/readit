@@ -1,0 +1,43 @@
+<config></config>
+<style lang="postcss">
+page {
+  width: 100%;
+  height: 100%;
+  background-color: #eeeeee;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+
+  .title {
+    font-size: 48px;
+    font-weight: blod;
+    margin-left: 20px;
+  }
+
+  .main {
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+</style>
+<template>
+  <view class="container">
+    <text class="title">发现</text>
+    <view class="main"></view>
+  </view>
+</template>
+
+<script>
+import { Page } from '@tinajs/tina'
+Page.define({
+  data: {
+    msg: 'hot',
+  },
+})
+</script>
